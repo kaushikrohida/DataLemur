@@ -1,6 +1,6 @@
 # LinkedIn - Data Science Skills
 
-## Problem Description
+## Problem Statement
 
 Given a table of candidates and their skills, you're tasked with finding the candidates best suited for an open Data Science job. You want to find candidates who are proficient in Python, Tableau, and PostgreSQL.
 
@@ -8,7 +8,7 @@ Write a query to list the candidates who possess all of the required skills for 
 
 ## Assumption
 
-- There are no duplicates in the candidates table.
+There are no duplicates in the candidates table.
 
 ## Schema
 
@@ -19,27 +19,27 @@ Write a query to list the candidates who possess all of the required skills for 
 | candidate_id | integer |
 | skill        | varchar |
 
-## Example
+## Example Input
 
-### Input
+### candidates
 
-candidates Example Input:
-candidate_id	skill
-123	Python
-123	Tableau
-123	PostgreSQL
-234	R
-234	PowerBI
-234	SQL Server
-345	Python
-345	Tableau
+| candidate_id | skill       |
+|--------------|-------------|
+| 123          | Python      |
+| 123          | Tableau     |
+| 123          | PostgreSQL  |
+| 234          | R           |
+| 234          | PowerBI     |
+| 234          | SQL Server  |
+| 345          | Python      |
+| 345          | Tableau     |
 
-### Output
+## Example Output
 
-Example Output:
-candidate_id
-123
+| candidate_id |
+|--------------|
+| 123          |
 
-### Explanation
+## Explanation
 
 Candidate 123 is displayed because they have Python, Tableau, and PostgreSQL skills. 345 isn't included in the output because they're missing one of the required skills: PostgreSQL.
